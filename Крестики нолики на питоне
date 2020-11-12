@@ -1,0 +1,35 @@
+def game():
+    field = [
+        ["-", "-", "-"],
+        ["-", "-", "-"],
+        ["-", "-", "-"]
+    ]
+    def print_field():
+        print("    1    2    3")
+        print("1",field[0])
+        print("2",field[1])
+        print("3",field[2])
+    for i in range(9):
+        print_field()
+        if i % 2==0:
+            print("Ходит Нолик")
+            x = int(input("Введите номер строки: "))
+            y = int(input("Введите номер столбца:"))
+            field[x-1][y-1] = "0"
+        elif field[0] [0] == "0" and field[0] [1] == "0" and field[0] [2] == "0" or field[0] [0] == "0" and field[1] [0] == "0" and field[2] [0] == "0" or field[0] [1] == "0" and field[1] [1] == "0" and field[2] [1] == "0" or field[1] [0] == "0" and field[1] [1] == "0" and field[1] [2] == "0" or field[2] [0] == "0" and field[2] [1] == "0" and field[2] [2] == "0" or field[0] [0] == "0" and field[1] [1] == "0" and field[2] [2] == "0" or field[0] [2] == "0" and field[1] [1] == "0" and field[2] [0] == "0" :
+            print(" Выйграли 0")
+            break
+        elif field[0] [0] == "X" and field[0] [1] == "X" and field[0] [2] == "X" or field[0] [0] == "X" and field[1] [0] == "X" and field[2] [0] == "X" or field[0] [1] == "X" and field[1] [1] == "X" and field[2] [1] == "X" or field[1] [0] == "X" and field[1] [1] == "X" and field[1] [2] == "X" or field[2] [0] == "X" and field[2] [1] == "X" and field[2] [2] == "X" or field[0] [0] == "X" and field[1] [1] == "X" and field[2] [2] == "X" or field[0] [2] == "X" and field[1] [1] == "X" and field[2] [0] == "X" :
+            print(" Выйграли X")
+            break
+        elif not (field[0] [0] == "0" and field[0] [1] == "0" and field[0] [2] == "0" or field[0] [0] == "0" and field[1] [0] == "0" and field[2] [0] == "0" or field[0] [1] == "0" and field[1] [1] == "0" and field[2] [1] == "0" or field[1] [0] == "0" and field[1] [1] == "0" and field[1] [2] == "0" or field[2] [0] == "0" and field[2] [1] == "0" and field[2] [2] == "0" or field[0] [0] == "0" and field[1] [1] == "0" and field[2] [2] == "0" or field[0] [2] == "0" and field[1] [1] == "0" and field[2] [0] == "0" ) and (field[0] [0] == "X" and field[0] [1] == "X" and field[0] [2] == "X" or field[0] [0] == "X" and field[1] [0] == "X" and field[2] [0] == "X" or field[0] [1] == "X" and field[1] [1] == "X" and field[2] [1] == "X" or field[1] [0] == "X" and field[1] [1] == "X" and field[1] [2] == "X" or field[2] [0] == "X" and field[2] [1] == "X" and field[2] [2] == "X" or field[0] [0] == "X" and field[1] [1] == "X" and field[2] [2] == "X" or field[0] [2] == "X" and field[1] [1] == "X" and field[2] [0] == "X" ):
+            print("Ничья")
+            break
+        else:
+            print("Ходит Крестик")
+            x = int(input("Введите номер строки: "))
+            y = int(input("Введите номер столбца:"))
+            field[x-1][y-1] = "X"
+p=0
+while p==0:
+    game()
